@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.2
+
+- Confirm `cce service start` actually writes a live pid file before reporting success.
+- Confirm `cce service stop` actually exits the service process before reporting success.
+- Print immediate console errors with recent `service.log` context when service start or stop confirmation fails.
+- Added regression coverage for service start/stop confirmation behavior.
+
 ## 0.3.1
 
 - Added parser and diagnostic support for Codex goal metadata updates.
